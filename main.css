@@ -1,0 +1,30 @@
+
+body {
+    background-image: url(../images/6143.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+.container{
+    display: flex;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+div[class^="flex"] {
+    padding: 50px;
+    outline: 2px solid black;
+    flex-wrap: wrap;
+}
+.flex-item1 {
+    width: 100%;
+}
+.flex-item2 {
+    width: 50%;
+}
+.flex-item3 {
+    width: 70%;
+}
+.flex-item4 {
+    width: 30%;
+}
