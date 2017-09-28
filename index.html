@@ -1,38 +1,92 @@
 <html>
 <head>
-<title>
-
-</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900" rel="stylesheet">
+    <title>
+    </title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-<div class="container">
-    <div class="flex-item1">item1</div>
+
+<div id="home" class="container">
+    <div class="flex-item1">
+        <div class="menucontainer">
+            <nav class="navmenu"><a href="#home">home</a>
+            </nav>
+            <nav class="navmenu"><a href="#other">about</a>
+            </nav>
+            <div class="navmenu"><a href="#education">education</a>
+            </div>
+            <nav class="navmenu"><a href="#experience">experience</a>
+                <ul>
+                    <li class="menulist"><a href="#on service experience">on service experience</a></li>
+                    <li class="menulist"><a href="#retire experience">retire experience</a></li>
+                </ul>
+            </nav>
+            <nav class="navmenu"><a href="#interests">interests</a>
+                <ul>
+                    <li class="menulist"><a href="#music">music experience</a></li>
+                    <li class="menulist"><a href="#shooting">shooting experience</a></li>
+                </ul>
+            </nav>
+            <nav class="navmenu"><a href="#contacts">contacts</a>
+                <ul>
+                    <li class="menulist">phone </li>
+                    <li class="menulist">email</li>
+                    <li class="menulist">adress</li>
+                    <li class="menulist">youtube channel</li>
+                </ul>
+            </nav>
+            <div id="button1" onclick="openNav()"> &#9776;</div>
+        </div>
+    </div>
 </div>
 <div class="container">
-    <div class="flex-item1">item1</div>
+    <div class="flex-item1"><h1>biography</h1></div>
 </div>
 <div class="container">
-    <div class="flex-item2">item2</div>
-    <div class="flex-item1">item2</div>
+    <div class="flex-item2"><h2><a id="education"></a>education</h2></div>
+    <div class="flex-item2"><h2><a id="experience"></a>experience</h2></div>
 </div>
 <div class="container">
-    <div class="flex-item2">item2</div>
-    <div class="flex-item2">item2</div>
+    <div class="flex-item2">education</div>
+    <div class="flex-item2"><h2><a id="on service experience"></a>on service experience</h2></div>
 </div>
 <div class="container">
-    <div class="flex-item2">item2</div>
-    <div class="flex-item2">item2</div>
+    <div class="flex-item2">education</div>
+    <div class="flex-item2"><h2><a id="retire experience"></a>retire experience</h2></div>
 </div>
 <div class="container">
-    <div class="flex-item1">item1</div>
+    <div class="flex-item1"><h2><a id="interests"></a>interests</h2></div>
 </div>
 <div class="container">
-    <div class="flex-item2">item2</div>
-    <div class="flex-item2">item2</div>
+    <div class="flex-item3"><h2><a id="music"></a>music</h2></div>
+    <div class="flex-item4"><h2><a id="shooting"></a>shooting</h2></div>
 </div>
 <div class="container">
-    <div class="flex-item2">item2</div>
-    <div class="flex-item2">item2</div>
+    <div class="flex-item2"><h2><a id="contacts"></a>contacts</h2></div>
+    <div class="flex-item2"><h2><a id="other"></a>other</h2></div>
 </div>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a href="#home">home</a>
+        <a href="#other">about</a>
+        <a href="#education">education</a>
+        <a href="#experience">experience</a>
+        <a href="#interests">interests</a>
+        <a href="#contacts">contacts</a>
+    </div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
 </body>
 </html>
