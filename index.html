@@ -9,31 +9,31 @@
 
 <div id="home" class="container">
     <div class="flex-item1">
-        <div class="menucontainer">
-            <nav class="navmenu"><a href="#home">home</a>
+        <div class="menu-container">
+            <nav class="nav-menu"><a href="#home">home</a>
             </nav>
-            <nav class="navmenu"><a href="#other">about</a>
+            <nav class="nav-menu"><a href="#other">about</a>
             </nav>
-            <div class="navmenu"><a href="#education">education</a>
+            <div class="nav-menu"><a href="#education">education</a>
             </div>
-            <nav class="navmenu"><a href="#experience">experience</a>
+            <nav class="nav-menu"><a href="#experience">experience</a>
                 <ul>
-                    <li class="menulist"><a href="#on service experience">on service experience</a></li>
-                    <li class="menulist"><a href="#retire experience">retire experience</a></li>
+                    <li class="menu-list"><a href="#on service experience">on service experience</a></li>
+                    <li class="menu-list"><a href="#retire experience">retire experience</a></li>
                 </ul>
             </nav>
-            <nav class="navmenu"><a href="#interests">interests</a>
+            <nav class="nav-menu"><a href="#interests">interests</a>
                 <ul>
-                    <li class="menulist"><a href="#music">music experience</a></li>
-                    <li class="menulist"><a href="#shooting">shooting experience</a></li>
+                    <li class="menu-list"><a href="#music">music experience</a></li>
+                    <li class="menu-list"><a href="#shooting">shooting experience</a></li>
                 </ul>
             </nav>
-            <nav class="navmenu"><a href="#contacts">contacts</a>
+            <nav class="nav-menu"><a href="#contacts">contacts</a>
                 <ul>
-                    <li class="menulist">phone </li>
-                    <li class="menulist">email</li>
-                    <li class="menulist">adress</li>
-                    <li class="menulist">youtube channel</li>
+                    <li class="menu-list">phone </li>
+                    <li class="menu-list">email</li>
+                    <li class="menu-list">adress</li>
+                    <li class="menu-list">youtube channel</li>
                 </ul>
             </nav>
             <div id="button1" onclick="openNav()"> &#9776;</div>
@@ -41,7 +41,7 @@
     </div>
 </div>
 <div class="container">
-    <div class="flex-item1"><h1>biography</h1></div>
+    <div class="flex-item1"><h1>biography (summary)</h1></div>
 </div>
 <div class="container">
     <div class="flex-item2"><h2><a id="education"></a>education</h2></div>
@@ -64,7 +64,8 @@
 </div>
 <div class="container">
     <div class="flex-item2"><h2><a id="contacts"></a>contacts</h2></div>
-    <div class="flex-item2"><h2><a id="other"></a>other</h2></div>
+    <div class="flex-item2"><p><a id="other"></a> All rights reserved. Kyiv.
+        <script>document.write((new Date()).getFullYear())</script></p></div>
 </div>
 
 <div id="myNav" class="overlay">
@@ -88,5 +89,6 @@
         document.getElementById("myNav").style.width = "0%";
     }
 </script>
+<!--по Java не разобрался, тупо скопировал-->
 </body>
 </html>
